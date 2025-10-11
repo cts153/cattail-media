@@ -1,7 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/hero-image.jpg";
+import heroImage from "@/assets/boardwalk.jpeg";
 
 const Hero = () => {
   return (
@@ -34,7 +34,7 @@ const Hero = () => {
               className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg"
             >
               <Link to="/portfolio">
-                View Our Work <ArrowRight className="ml-2 h-5 w-5" />
+                View My Work <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
             <Button

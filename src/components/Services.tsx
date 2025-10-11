@@ -12,13 +12,13 @@ const services = [
     icon: Share2,
     title: "Social Media Management",
     description:
-      "Strategic social media presence that engages your audience and builds your brand across platforms.",
+      "Strategic social media presence that engages your audience and reaches your next client.",
   },
   {
     icon: Camera,
     title: "Photography",
     description:
-      "Professional product and lifestyle photography that showcases your business in the best light.",
+      "Commercial & creative photography that showcases you, your business, and your products in the best light.",
   },
   {
     icon: Palette,
@@ -37,7 +37,7 @@ const Services = () => {
             Services That Grow Your Business
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Tailored solutions for small businesses ready to make an impact online
+            Tailored solutions for small businesses ready to make an impact online.
           </p>
         </div>
 

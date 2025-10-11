@@ -54,12 +54,12 @@ const About = () => {
           {/* About Section */}
           <div className="max-w-3xl mx-auto mb-20 animate-fade-in">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 text-center">
-              About Creative Studio
+              About Cattail Media Co.
             </h1>
             <div className="prose prose-lg max-w-none text-muted-foreground">
               <p className="text-lg leading-relaxed mb-6">
-                Hi, I'm [Your Name], and I've been helping small businesses in our community
-                establish and grow their online presence for over [X] years. What started as a
+                Hi, I'm Casey, and I've been helping small businesses in our community
+                establish and grow their online presence. What started as a
                 passion for photography evolved into a full-service creative studio offering
                 web design, branding, and social media management.
               </p>
@@ -95,7 +95,7 @@ const About = () => {
                 <Linkedin className="h-5 w-5" />
               </a>
               <a
-                href="mailto:hello@creativestudio.com"
+                href="mailto:caseytaylorsanders@gmail.com"
                 className="p-3 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
                 aria-label="Email"
               >

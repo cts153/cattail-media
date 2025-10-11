@@ -22,45 +22,45 @@ interface PortfolioItem {
 const portfolioItems: PortfolioItem[] = [
   {
     id: 1,
-    title: "Modern Business Website",
+    title: "Recent Website",
     category: "web",
     image: portfolioWeb1,
-    description: "Squarespace site for a local consulting firm",
+    description: "Custom squarespace sites for local businesses and creatives.",
   },
   {
     id: 2,
-    title: "Cafe Brand Identity",
+    title: "Branding Package",
     category: "branding",
     image: portfolioBranding1,
-    description: "Complete brand package for artisan coffee shop",
+    description: "Bring your story to life with a cohesive visual identity.",
   },
   {
     id: 3,
-    title: "Artisan Product Photography",
+    title: "Creative Photography",
     category: "photography",
     image: portfolioPhoto1,
-    description: "Product shots for local bakery and cafe",
+    description: "Senior photos, family portraits, and more.",
   },
   {
     id: 4,
-    title: "E-commerce Platform",
+    title: "Online Storefront",
     category: "web",
     image: portfolioWeb2,
-    description: "Online store built on Squarespace",
+    description: "Customized Squarespace e-commerce site to fit your needs.",
   },
   {
     id: 5,
-    title: "Boutique Storefront",
+    title: "Commercial and Product Photography",
     category: "photography",
     image: portfolioPhoto2,
-    description: "Commercial photography for retail business",
+    description: "From real estate to artisan craft, we've got you covered.",
   },
   {
     id: 6,
-    title: "Restaurant Branding",
+    title: "Social Media Kits",
     category: "branding",
     image: portfolioBranding2,
-    description: "Full brand identity and menu design",
+    description: "Express your personality in every detail.",
   },
 ];
 
@@ -88,10 +88,10 @@ const Portfolio = () => {
           {/* Header */}
           <div className="text-center mb-12 animate-fade-in">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Our Portfolio
+              Welcome to my portfolio
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              A selection of recent projects for small businesses across our community
+              A selection of recent projects showcasing what I can do.
             </p>
           </div>
 
