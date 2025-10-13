@@ -41,7 +41,7 @@ const portfolioItems: PortfolioItem[] = [
     image: portfolioPhoto1,
     description: "Senior photos, family portraits, and more.",
   },
-  {
+  /*{
     id: 4,
     title: "Online Storefront",
     category: "web",
@@ -61,7 +61,7 @@ const portfolioItems: PortfolioItem[] = [
     category: "branding",
     image: portfolioBranding2,
     description: "Express your personality in every detail.",
-  },
+  },*/
 ];
 
 const Portfolio = () => {
