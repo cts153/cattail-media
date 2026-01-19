@@ -1,4 +1,7 @@
 import Navbar from "@/components/Navbar";
+import photo1 from "src/assets/about_photo1.png";
+import photo2 from "src/assets/about_photo2.jpeg";
+import photo3 from "src/assets/about_photo3.jpeg";
 // import InstagramFeed from "@/components/InstagramFeed"; // Uncomment once ready
 
 const About = () => {
