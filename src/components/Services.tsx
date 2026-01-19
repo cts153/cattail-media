@@ -1,28 +1,33 @@
 import { Globe, Camera, Palette, Share2 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 
 const services = [
   {
     icon: Globe,
-    title: "Squarespace Web Design",
+    title: "Web Design",
+    category: "web",
     description:
-      "Beautiful, responsive websites built on Squarespace. Perfect for businesses that want to manage their own content with ease.",
+      "Beautiful, responsive websites perfect for businesses to showcase their work.",
   },
   {
     icon: Share2,
-    title: "Social Media Management",
+    title: "Social Media",
+    category: "social-media",
     description:
       "Strategic social media presence that engages your audience and reaches your next client.",
   },
   {
     icon: Camera,
     title: "Photography",
+    category: "photography",
     description:
       "Commercial & creative photography that showcases you, your business, and your products in the best light.",
   },
   {
     icon: Palette,
     title: "Branding & Design",
+    category: "branding",
     description:
       "Cohesive brand identity including logos, color palettes, and visual guidelines that tell your story.",
   },
@@ -42,25 +47,30 @@ const Services = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {services.map((service, index) => (
-            <Card
-              key={index}
-              className="group hover:shadow-xl transition-all duration-300 border-border bg-card animate-scale-in"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <CardContent className="p-6">
-                <div className="mb-4 inline-flex p-3 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                  <service.icon className="h-6 w-6" />
-                </div>
-                <h3 className="text-xl font-semibold text-foreground mb-3">
-                  {service.title}
-                </h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  {service.description}
-                </p>
-              </CardContent>
-            </Card>
-          ))}
+        {services.map((service, index) => (
+        <Link
+          key={index}
+          to={`/portfolio?category=${service.category}`}
+          className="block"
+        >
+          <Card
+          className="group hover:shadow-xl transition-all duration-300 border-border bg-card animate-scale-in cursor-pointer"
+          style={{ animationDelay: `${index * 100}ms` }}
+          >
+            <CardContent className="p-6">
+            <div className="mb-4 inline-flex p-3 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+            <service.icon className="h-6 w-6" />
+            </div>
+            <h3 className="text-xl font-semibold text-foreground mb-3">
+            {service.title}
+            </h3>
+            <p className="text-muted-foreground leading-relaxed">
+            {service.description}
+            </p>
+            </CardContent>
+          </Card>
+        </Link>
+        ))}
         </div>
       </div>
     </section>

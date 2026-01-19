@@ -8,41 +8,46 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 35 40% 96%;
-    --foreground: 20 14% 20%;
+  /* Core */
+  --background: 345 63% 88%; /* #f4cad5 */
+  --foreground: 0 0% 33%;   /* #555555 */
 
-    --card: 0 0% 100%;
-    --card-foreground: 20 14% 20%;
+  /* Surfaces */
+  --card: 48 100% 97%;      /* #fffcf1 */
+  --card-foreground: 0 0% 33%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 20 14% 20%;
+  --popover: 48 100% 97%;
+  --popover-foreground: 0 0% 33%;
 
-    --primary: 16 65% 60%;
-    --primary-foreground: 0 0% 100%;
+  /* Brand */
+  --primary: 345 82% 70%;   /* #f07896 */
+  --primary-foreground: 0 0% 0%; /* black */
 
-    --secondary: 35 30% 88%;
-    --secondary-foreground: 20 14% 20%;
+  --secondary: 48 100% 97%; /* cream */
+  --secondary-foreground: 0 0% 33%;
 
-    --muted: 35 20% 90%;
-    --muted-foreground: 20 10% 45%;
+  /* Muted / subtle */
+  --muted: 345 45% 92%;
+  --muted-foreground: 0 0% 40%;
 
-    --accent: 25 75% 65%;
-    --accent-foreground: 0 0% 100%;
+  /* Accent (buttons, highlights) */
+  --accent: 345 82% 70%;
+  --accent-foreground: 0 0% 0%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 100%;
+  /* Utility */
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
 
-    --border: 35 20% 85%;
-    --input: 35 20% 85%;
-    --ring: 16 65% 60%;
+  --border: 0 0% 85%;
+  --input: 0 0% 85%;
+  --ring: 345 82% 70%;
 
-    --radius: 0.75rem;
+  --radius: 0.75rem;
 
-    --gradient-warm: linear-gradient(135deg, hsl(16 65% 60%), hsl(25 75% 65%));
-    --gradient-subtle: linear-gradient(180deg, hsl(35 40% 96%), hsl(0 0% 100%));
-    --shadow-soft: 0 10px 40px -10px hsl(16 65% 60% / 0.15);
-    --shadow-card: 0 4px 20px -4px hsl(20 14% 20% / 0.08);
-  }
+  /* Optional flair */
+  --shadow-soft: 0 10px 30px -10px hsl(345 82% 70% / 0.25);
+  --shadow-card: 0 4px 20px -4px hsl(0 0% 0% / 0.1);
+}
 
   .dark {
     --background: 20 20% 12%;

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import CMLogo from "@/assets/CM_logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,16 +12,16 @@ const Navbar = () => {
 
   const navLinks = [
     { path: "/", label: "Home" },
-    { path: "/portfolio", label: "Portfolio" },
-    { path: "/about", label: "About & Contact" },
+    /*{ path: "/portfolio", label: "Portfolio" },*/
+    { path: "/about", label: "About" },
   ];
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <Link to="/" className="text-xl font-semibold text-foreground">
-            Cattail Media Co.
+          <Link to="/" className="flex items-center">
+          <img src={CMLogo} alt="Cattail Media Co. Logo" className="h-8 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -39,7 +40,7 @@ const Navbar = () => {
               </Link>
             ))}
             <Button asChild size="sm" className="bg-primary hover:bg-primary/90">
-              <Link to="/about">Get in Touch</Link>
+              <Link to="/contact">Get in Touch</Link>
             </Button>
           </div>
 
@@ -72,7 +73,7 @@ const Navbar = () => {
                 </Link>
               ))}
               <Button asChild size="sm" className="w-full bg-primary hover:bg-primary/90">
-                <Link to="/about" onClick={() => setIsOpen(false)}>
+                <Link to="/contact" onClick={() => setIsOpen(false)}>
                   Get in Touch
                 </Link>
               </Button>
