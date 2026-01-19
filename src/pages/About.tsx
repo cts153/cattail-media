@@ -35,9 +35,9 @@ const About = () => {
                 strategy, but you walk away with the know-how to make it your own.
               </p>
               <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                <img src="src\assets\about_photo1.png" alt="Photo of Casey and AJ" className="rounded-lg" />
-                <img src="src\assets\about_photo2.jpeg" alt="Photo of Casey on her horse" className="rounded-lg" />
-                <img src="src\assets\about_photo3.jpeg" alt="Photo of Casey with her snowboard" className="rounded-lg" />
+                <img src={photo1} alt="Photo of Casey and AJ" className="rounded-lg" />
+                <img src={photo2} alt="Photo of Casey on her horse" className="rounded-lg" />
+                <img src={photo3} alt="Photo of Casey with her snowboard" className="rounded-lg" />
               </div>
             </div>
           </div>
